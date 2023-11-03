@@ -167,14 +167,6 @@ class Maze_game():
             is_done = True
             #self.reset()
 
-        # elif (self.current_index[0]==self.current_index[1]+5 and (joint_action[0]==0 and joint_action[1]==1)) or \
-        #         (self.current_index[1]==self.current_index[0]+5 and (joint_action[0]==1 and joint_action[1]==0)) or \
-        #         (self.current_index[0]==self.current_index[1]+1 and (joint_action[0]==3 and joint_action[1]==2)) or \
-        #         (self.current_index[1]==self.current_index[0]+1 and (joint_action[0]==2 and joint_action[1]==3)):
-        #     joint_reward[0] = -100
-        #     joint_reward[1] = 100
-        #     is_done = True
-
         elif (self.pre_index[0] == self.pre_index[1] + 5 and (joint_action[0] == 0 and joint_action[1] == 1)) or \
                 (self.pre_index[0] == self.pre_index[1] - 5 and (joint_action[0] == 1 and joint_action[1] == 0)) or \
                 (self.pre_index[0] == self.pre_index[1] + 1 and (joint_action[0] == 2 and joint_action[1] == 3) and self.pre_index[1]//5 == self.pre_index[0]//5) or \
